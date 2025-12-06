@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Telangana Rising Global Summit 2025 – Official Social Handles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Brand icons (YouTube, Instagram, LinkedIn, X, Facebook) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        referrerpolicy="no-referrer" />
+
+  <style>
+    :root {
+      /* APPROX brand palette (you can tweak) */
+      --blue-main: #244aa5;
+      --blue-dark: #132d74;
+      --purple-main: #6a2e90;
+      --orange-accent: #f89c1c;
+      --bg-grey: #eef1f6;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #6b7280;
+      --border-soft: #d1d5db;
+      --radius-lg: 20px;
+      --radius-pill: 999px;
+      --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.26);
+
+      /* <<< CUSTOM BACKGROUND IMAGE (replace bg.jpg with your file) >>> */
+      --hero-bg-image: url("bg.jpg");
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg-grey);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      color: var(--text-main);
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Big, soft background image area */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.85), rgba(255,255,255,0.97)),
+        var(--hero-bg-image) center/cover no-repeat;
+      z-index: -2;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at 0% 0%, rgba(248, 156, 28, 0.35), transparent 55%),
+        radial-gradient(circle at 100% 100%, rgba(36, 74, 165, 0.35), transparent 55%);
+      mix-blend-mode: multiply;
+      opacity: 0.75;
+      z-index: -1;
+    }
+
+    .page-shell {
+      width: 100%;
+      max-width: 950px;
+      background: rgba(244, 247, 253, 0.97);
+      border-radius: 24px;
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    @media (max-width: 600px) {
+      .page-shell {
+        border-radius: 18px;
+        box-shadow: 0 10px 24px rgba(15, 23, 42, 0.22);
+      }
+    }
+
+    /* Top header */
+    .header-bar {
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue-main));
+      color: #ffffff;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .logo-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+      box-shadow: 0 8px 20px rgba(15,23,42,0.4);
+      flex-shrink: 0;
+    }
+
+    .logo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
+    .header-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      min-width: 0;
+    }
+
+    .header-title {
+      font-family: "Oswald", system-ui, sans-serif;
+      font-size: 18px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+
+    .header-subtitle {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+      font-size: 10px;
+      text-align: right;
+    }
+
+    .header-tag {
+      padding: 3px 8px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(255,255,255,0.75);
+      background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(0,0,0,0.1));
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 600;
+    }
+
+    .header-date {
+      opacity: 0.9;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 640px) {
+      .header-bar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .header-right {
+        align-items: flex-start;
+        text-align: left;
+      }
+      .header-title {
+        font-size: 16px;
+      }
+    }
+
+    /* Hero panel */
+    .hero-panel {
+      padding: 14px 14px 8px;
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+      gap: 12px;
+    }
+
+    @media (max-width: 760px) {
+      .hero-panel {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .hero-copy {
+      max-width: 600px;
+    }
+
+    .hero-kicker {
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--purple-main);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .hero-headline {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--blue-dark);
+      margin-bottom: 4px;
+    }
+
+    .hero-body {
+      font-size: 13px;
+      color: var(--text-main);
+      max-width: 540px;
+      line-height: 1.5;
+    }
+
+    .hero-body strong {
+      font-weight: 600;
+    }
+
+    .hero-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+      font-size: 11px;
+    }
+
+    .pill {
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      background: #ffffff;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .pill span.dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #22c55e;
+    }
+
+    .qr-panel {
+      justify-self: end;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
+
+    .qr-cta {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--blue-dark);
+      font-weight: 600;
+    }
+
+    .qr-box {
+      width: 130px;
+      height: 130px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #ffffff, #e4ecff);
+      border: 1px dashed #c4d2ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 26px rgba(15,23,42,0.25);
+      overflow: hidden;
+      padding: 6px;
+    }
+
+    .qr-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    @media (max-width: 760px) {
+      .qr-panel {
+        align-items: flex-start;
+      }
+      .qr-box {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    .content-shell {
+      padding: 8px 14px 16px;
+    }
+
+    @media (min-width: 768px) {
+      .content-shell {
+        padding: 10px 18px 18px;
+      }
+    }
+
+    .section-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .section-titles {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .section-kicker {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
+    }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--blue-dark);
+    }
+
+    .section-caption {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .section-tag {
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      background: #fff7eb;
+      border: 1px solid #fed7aa;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--orange-accent);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-soft);
+      padding: 12px 12px 14px;
+      box-shadow: 0 8px 20px rgba(148, 163, 184, 0.35);
+    }
+
+    @media (min-width: 768px) {
+      .card {
+        padding: 14px 14px 16px;
+      }
+    }
+
+    .card-intro {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .card-intro strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, #cbd5f5, transparent);
+      margin: 8px 0 12px;
+    }
+
+    .social-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .social-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .social-item {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 9px;
+      border-radius: 16px;
+      border: 1px solid #d0d8ea;
+      background: linear-gradient(135deg, #ffffff, #f3f6ff);
+      transition: box-shadow 0.15s ease-out, transform 0.15s ease-out, border-color 0.15s ease-out;
+    }
+
+    .social-item:hover {
+      border-color: var(--blue-main);
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(15,23,42,0.28);
+    }
+
+    .social-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      background: #ffffff;
+      box-shadow: 0 4px 10px rgba(148,163,184,0.5);
+      flex-shrink: 0;
+    }
+
+    .social-icon--x { color: #000000; }
+    .social-icon--yt { color: #ff0000; }
+    .social-icon--ig {
+      background: radial-gradient(circle at 30% 30%, #fdf497, #fd5949 40%, #d6249f 75%, #285aeb);
+      color: #ffffff;
+    }
+    .social-icon--in { color: #0a66c2; }
+    .social-icon--fb { color: #1877f2; }
+
+    .social-content { min-width: 0; }
+
+    .social-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 1px;
+    }
+
+    .social-name {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #111827;
+    }
+
+    .social-tag {
+      font-size: 9px;
+      padding: 2px 6px;
+      border-radius: var(--radius-pill);
+      background: #eff4ff;
+      border: 1px solid #c7ddff;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--blue-dark);
+      font-weight: 600;
+    }
+
+    .social-url {
+      font-size: 11px;
+      color: var(--text-muted);
+      word-break: break-all;
+    }
+
+    .social-btn {
+      padding: 6px 10px;
+      border-radius: var(--radius-pill);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 600;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background: linear-gradient(135deg, var(--orange-accent), #ffd08a);
+      color: #4b1d00;
+      box-shadow: 0 6px 14px rgba(248,156,28,0.5);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+    }
+
+    .social-btn span.icon-chevron {
+      font-size: 11px;
+    }
+
+    .social-item:hover .social-btn {
+      box-shadow: 0 8px 18px rgba(248,156,28,0.8);
+      transform: translateY(-0.5px);
+    }
+
+    @media (max-width: 520px) {
+      .social-item {
+        grid-template-columns: auto minmax(0, 1fr);
+        grid-template-rows: auto auto;
+      }
+      .social-btn {
+        margin-top: 6px;
+        justify-self: flex-start;
+      }
+    }
+
+    .footer-note {
+      margin-top: 12px;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .footer-note strong {
+      color: var(--blue-dark);
+      font-weight: 600;
+    }
+
+    .tagline {
+      margin-top: 4px;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      color: var(--purple-main);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main class="page-shell">
+    <!-- HEADER WITH LOGO -->
+    <header class="header-bar">
+      <div class="header-left">
+        <div class="logo-wrap">
+          <!-- Replace logo.png with your summit logo file -->
+          <img src="logo.png" alt="Telangana Rising Global Summit logo" />
+        </div>
+        <div class="header-text">
+          <div class="header-title">TELANGANA RISING</div>
+          <div class="header-subtitle">GLOBAL SUMMIT 2025 • VISION 2047</div>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="header-tag">Official Social Media Handles</div>
+        <div class="header-date">Hyderabad • December 8–9, 2025</div>
+      </div>
+    </header>
+
+    <!-- HERO COPY + QR -->
+    <section class="hero-panel">
+      <div class="hero-copy">
+        <div class="hero-kicker">Stay Connected</div>
+        <div class="hero-headline">Follow the verified summit platforms</div>
+        <p class="hero-body">
+          As Telangana prepares to welcome the world to Hyderabad, we invite you to
+          follow the <strong>official social media handles</strong> of the
+          <strong>Telangana Rising Global Summit 2025</strong> for key updates,
+          announcements and real-time highlights.
+        </p>
+        <div class="hero-pills">
+          <div class="pill">
+            <span class="dot"></span>
+            <span>Live coverage of sessions &amp; announcements</span>
+          </div>
+          <div class="pill">
+            <span>4 Halls • 27 Sessions • Vision 2047</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="qr-panel">
+        <div class="qr-cta">Scanned via QR</div>
+        <div class="qr-box">
+          <!-- Your QR code image -->
+          <img src="qr.png" alt="QR Code" />
+        </div>
+      </aside>
+    </section>
+
+    <!-- SOCIAL CARD LIST -->
+    <section class="content-shell">
+      <div class="section-header">
+        <div class="section-titles">
+          <div class="section-kicker">Official Channels</div>
+          <div class="section-title">Click to open &amp; follow</div>
+          <div class="section-caption">
+            Every button below opens the verified Telangana Rising Global Summit 2025 account.
+          </div>
+        </div>
+        <div class="section-tag">Tap • Follow • Stay Updated</div>
+      </div>
+
+      <div class="card">
+        <p class="card-intro">
+          These are the <strong>only official social media handles</strong> of the
+          <strong>Telangana Rising Global Summit 2025.</strong> Follow them for announcements,
+          session highlights, leadership conversations and behind-the-scenes coverage.
+        </p>
+
+        <div class="divider"></div>
+
+        <div class="social-list">
+          <!-- Twitter / X -->
+          <a class="social-link" href="https://twitter.com/GlobalSummitTG" target="_blank" rel="noopener noreferrer">
+            <div class="social-item">
+              <div class="social-icon social-icon--x">
+                <i class="fa-brands fa-x-twitter"></i>
+              </div>
+              <div class="social-content">
+                <div class="social-top">
+                  <span class="social-name">Twitter (X)</span>
+                  <span class="social-tag">Real-time updates</span>
+                </div>
+                <div class="social-url">@GlobalSummitTG</div>
+              </div>
+              <button class="social-btn" type="button">
+                Click here
+                <span class="icon-chevron">↗</span>
+              </button>
+            </div>
+          </a>
+
+          <!-- Instagram -->
+          <a class="social-link" href="https://instagram.com/tgrisingglobalsummit25" target="_blank" rel="noopener noreferrer">
+            <div class="social-item">
+              <div class="social-icon social-icon--ig">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="social-content">
+                <div class="social-top">
+                  <span class="social-name">Instagram</span>
+                  <span class="social-tag">Stories &amp; Reels</span>
+                </div>
+                <div class="social-url">@tgrisingglobalsummit25</div>
+              </div>
+              <button class="social-btn" type="button">
+                Click here
+                <span class="icon-chevron">↗</span>
+              </button>
+            </div>
+          </a>
+
+          <!-- LinkedIn -->
+          <a class="social-link" href="https://www.linkedin.com/company/telangana-rising-global-summit/" target="_blank" rel="noopener noreferrer">
+            <div class="social-item">
+              <div class="social-icon social-icon--in">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="social-content">
+                <div class="social-top">
+                  <span class="social-name">LinkedIn</span>
+                  <span class="social-tag">Leadership &amp; policy</span>
+                </div>
+                <div class="social-url">Telangana Rising Global Summit</div>
+              </div>
+              <button class="social-btn" type="button">
+                Click here
+                <span class="icon-chevron">↗</span>
+              </button>
+            </div>
+          </a>
+
+          <!-- YouTube -->
+          <a class="social-link" href="https://www.youtube.com/@TGGlobalSummit2025" target="_blank" rel="noopener noreferrer">
+            <div class="social-item">
+              <div class="social-icon social-icon--yt">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <div class="social-content">
+                <div class="social-top">
+                  <span class="social-name">YouTube</span>
+                  <span class="social-tag">Live &amp; highlights</span>
+                </div>
+                <div class="social-url">@TGGlobalSummit2025</div>
+              </div>
+              <button class="social-btn" type="button">
+                Click here
+                <span class="icon-chevron">↗</span>
+              </button>
+            </div>
+          </a>
+
+          <!-- Facebook -->
+          <a class="social-link" href="https://www.facebook.com/people/TG-Summit/61584564928440/" target="_blank" rel="noopener noreferrer">
+            <div class="social-item">
+              <div class="social-icon social-icon--fb">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="social-content">
+                <div class="social-top">
+                  <span class="social-name">Facebook</span>
+                  <span class="social-tag">Community</span>
+                </div>
+                <div class="social-url">TG Summit – Official Page</div>
+              </div>
+              <button class="social-btn" type="button">
+                Click here
+                <span class="icon-chevron">↗</span>
+              </button>
+            </div>
+          </a>
+        </div>
+
+        <div class="footer-note">
+          <p>
+            Please follow these handles and stay connected as
+            <strong>Telangana steps forward with Vision 2047.</strong>
+          </p>
+          <p class="tagline">Join the Rise.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
