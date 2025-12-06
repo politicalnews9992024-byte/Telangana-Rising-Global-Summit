@@ -178,22 +178,16 @@
       }
     }
 
-    /* HERO + QR */
+    /* HERO + QR – single column, QR centered */
     .hero-panel {
-      padding: 16px 16px 8px;
-      display: grid;
-      grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.2fr);
+      padding: 16px 16px 10px;
+      display: flex;
+      flex-direction: column;
       gap: 14px;
     }
 
-    @media (max-width: 760px) {
-      .hero-panel {
-        grid-template-columns: minmax(0, 1fr);
-      }
-    }
-
     .hero-copy {
-      max-width: 600px;
+      text-align: left;
     }
 
     .hero-kicker {
@@ -206,8 +200,8 @@
     }
 
     .hero-headline {
-      font-size: 18px;
-      font-weight: 600;
+      font-size: 19px;
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       color: var(--blue-dark);
@@ -218,7 +212,7 @@
       font-size: 13px;
       color: var(--text-main);
       line-height: 1.5;
-      max-width: 520px;
+      max-width: 540px;
     }
 
     .hero-body strong {
@@ -228,15 +222,15 @@
     .hero-footnote {
       font-size: 11px;
       color: var(--text-muted);
-      margin-top: 10px;
+      margin-top: 8px;
     }
 
     .qr-panel {
-      justify-self: end;
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+      align-items: center;
       gap: 8px;
+      margin-top: 4px;
     }
 
     .qr-label {
@@ -248,8 +242,8 @@
     }
 
     .qr-box {
-      width: 130px;
-      height: 130px;
+      width: 140px;
+      height: 140px;
       border-radius: 18px;
       background: linear-gradient(135deg, #ffffff, #e4ecff);
       border: 1px dashed #c4d2ff;
@@ -267,16 +261,6 @@
       object-fit: contain;
     }
 
-    @media (max-width: 760px) {
-      .qr-panel {
-        align-items: flex-start;
-      }
-      .qr-box {
-        width: 120px;
-        height: 120px;
-      }
-    }
-
     /* CONTENT */
     .content-shell {
       padding: 8px 16px 16px;
@@ -290,7 +274,7 @@
     }
 
     .section-header {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .section-kicker {
@@ -330,18 +314,13 @@
       margin-bottom: 8px;
     }
 
-    .card-intro strong {
-      color: var(--text-main);
-      font-weight: 600;
-    }
-
     .divider {
       height: 1px;
       background: linear-gradient(to right, transparent, #cbd5f5, transparent);
       margin: 6px 0 10px;
     }
 
-    /* SOCIAL LIST – clean minimal cards */
+    /* SOCIAL LIST – clean cards */
     .social-list {
       display: flex;
       flex-direction: column;
@@ -462,14 +441,14 @@
       </div>
     </header>
 
-    <!-- HERO + QR -->
+    <!-- HERO + QR (stacked) -->
     <section class="hero-panel">
       <div class="hero-copy">
         <div class="hero-kicker">Stay connected</div>
-        <div class="hero-headline">Follow the verified summit platforms</div>
+        <div class="hero-headline">Follow the summit platforms</div>
         <p class="hero-body">
           Follow the <strong>official social media handles</strong> of the
-          <strong>Telangana Rising Global Summit 2025</strong> for programme
+          <strong>Telangana Rising Global Summit 2025</strong> for key programme
           updates, announcements and highlights from Hyderabad.
         </p>
         <p class="hero-footnote">
@@ -477,12 +456,12 @@
         </p>
       </div>
 
-      <aside class="qr-panel">
+      <div class="qr-panel">
         <div class="qr-label">Scanned via QR</div>
         <div class="qr-box">
           <img src="qr.png" alt="QR Code" />
         </div>
-      </aside>
+      </div>
     </section>
 
     <!-- SOCIALS -->
@@ -491,14 +470,14 @@
         <div class="section-kicker">Official channels</div>
         <div class="section-title">Tap a platform to open</div>
         <div class="section-caption">
-          Each card below opens the verified Telangana Rising Global Summit 2025 handle.
+          Each card opens a verified Telangana Rising Global Summit 2025 handle.
         </div>
       </div>
 
       <div class="card">
         <p class="card-intro">
-          Follow your preferred platforms for live coverage, speaker highlights,
-          and key moments from the summit.
+          Follow your preferred platforms for live coverage, speaker highlights and
+          key moments from the summit.
         </p>
 
         <div class="divider"></div>
