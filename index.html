@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N0GRMHKPC1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N0GRMHKPC1');
-</script>
-  
   <meta charset="UTF-8" />
   <title>Telangana Rising Global Summit 2025 – Official Social Handles</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -165,14 +155,55 @@
     }
 
     .header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
       font-size: 10px;
       text-align: right;
     }
 
-    .header-right span {
+    .header-right-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      text-align: right;
+    }
+
+    .header-right-text span {
       display: block;
       letter-spacing: 0.12em;
       text-transform: uppercase;
+    }
+
+    .header-cta-btn {
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background: #2563eb;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 8px 18px rgba(37, 99, 235, 0.6);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .header-cta-btn i {
+      font-size: 11px;
+    }
+
+    .header-cta-btn:hover {
+      box-shadow: 0 10px 22px rgba(37, 99, 235, 0.8);
+      transform: translateY(-1px);
     }
 
     @media (max-width: 640px) {
@@ -181,10 +212,15 @@
         align-items: flex-start;
       }
       .header-right {
+        align-items: flex-start;
         text-align: left;
       }
       .header-title {
         font-size: 16px;
+      }
+      .header-cta-btn {
+        font-size: 10px;
+        padding: 6px 12px;
       }
     }
 
@@ -404,8 +440,17 @@
         </div>
       </div>
       <div class="header-right">
-        <span>OFFICIAL SOCIAL MEDIA HANDLES</span>
-        <span>HYDERABAD • DECEMBER 8–9, 2025</span>
+        <div class="header-right-text">
+          <span>OFFICIAL SOCIAL MEDIA HANDLES</span>
+          <span>HYDERABAD • DECEMBER 8–9, 2025</span>
+        </div>
+        <a class="header-cta-btn"
+           href="https://telanganarising2047.org/"
+           target="_blank"
+           rel="noopener noreferrer">
+          VISIT WEBSITE
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
       </div>
     </header>
 
@@ -442,6 +487,22 @@
         <div class="divider"></div>
 
         <div class="social-list">
+          <!-- Official Website (FIRST) -->
+          <a class="social-link" href="https://telanganarising2047.org/" target="_blank" rel="noopener noreferrer">
+            <div class="social-item">
+              <div class="social-icon" style="color:#244aa5;">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div class="social-content">
+                <div class="social-name-row">
+                  <span class="social-name">Official Website</span>
+                </div>
+                <div class="social-handle">telanganarising2047.org</div>
+              </div>
+              <div class="social-arrow">↗</div>
+            </div>
+          </a>
+
           <!-- X -->
           <a class="social-link" href="https://twitter.com/GlobalSummitTG" target="_blank" rel="noopener noreferrer">
             <div class="social-item">
