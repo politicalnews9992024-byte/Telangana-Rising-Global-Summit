@@ -93,18 +93,24 @@
       }
     }
 
-    /* HEADER */
+    /* HEADER WITH QR ON RIGHT */
     .header-bar {
       background: linear-gradient(135deg, var(--blue-dark), var(--blue-main));
       color: #ffffff;
       padding: 10px 14px;
-      display: flex;
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) auto;
+      gap: 14px;
       align-items: center;
-      justify-content: space-between;
-      gap: 10px;
     }
 
-    .header-left {
+    @media (max-width: 640px) {
+      .header-bar {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .header-main {
       display: flex;
       align-items: center;
       gap: 10px;
@@ -134,7 +140,7 @@
     .header-text {
       display: flex;
       flex-direction: column;
-      gap: 2px;
+      gap: 4px;
       min-width: 0;
     }
 
@@ -154,40 +160,68 @@
       opacity: 0.9;
     }
 
-    .header-right {
+    .header-meta {
       font-size: 10px;
-      text-align: right;
-    }
-
-    .header-right span {
-      display: block;
       letter-spacing: 0.12em;
       text-transform: uppercase;
+      opacity: 0.9;
+    }
+
+    .header-qr {
+      justify-self: end;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .header-qr-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 600;
+      opacity: 0.95;
+    }
+
+    .header-qr-box {
+      width: 96px;
+      height: 96px;
+      border-radius: 16px;
+      background: radial-gradient(circle at 0 0, rgba(255,255,255,0.4), transparent 65%),
+                  #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 26px rgba(15,23,42,0.5);
+      padding: 6px;
+    }
+
+    .header-qr-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 12px;
     }
 
     @media (max-width: 640px) {
-      .header-bar {
-        flex-direction: column;
+      .header-qr {
         align-items: flex-start;
       }
-      .header-right {
-        text-align: left;
+      .header-qr-box {
+        width: 90px;
+        height: 90px;
       }
       .header-title {
         font-size: 16px;
       }
     }
 
-    /* HERO + QR – single column, QR centered */
+    /* HERO TEXT ONLY */
     .hero-panel {
-      padding: 16px 16px 10px;
+      padding: 14px 16px 10px;
       display: flex;
       flex-direction: column;
-      gap: 14px;
-    }
-
-    .hero-copy {
-      text-align: left;
+      gap: 8px;
     }
 
     .hero-kicker {
@@ -196,7 +230,6 @@
       text-transform: uppercase;
       color: var(--purple-main);
       font-weight: 600;
-      margin-bottom: 4px;
     }
 
     .hero-headline {
@@ -205,14 +238,13 @@
       text-transform: uppercase;
       letter-spacing: 0.08em;
       color: var(--blue-dark);
-      margin-bottom: 6px;
     }
 
     .hero-body {
       font-size: 13px;
       color: var(--text-main);
       line-height: 1.5;
-      max-width: 540px;
+      max-width: 560px;
     }
 
     .hero-body strong {
@@ -222,43 +254,7 @@
     .hero-footnote {
       font-size: 11px;
       color: var(--text-muted);
-      margin-top: 8px;
-    }
-
-    .qr-panel {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
       margin-top: 4px;
-    }
-
-    .qr-label {
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--blue-dark);
-      font-weight: 600;
-    }
-
-    .qr-box {
-      width: 140px;
-      height: 140px;
-      border-radius: 18px;
-      background: linear-gradient(135deg, #ffffff, #e4ecff);
-      border: 1px dashed #c4d2ff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 10px 26px rgba(15,23,42,0.25);
-      overflow: hidden;
-      padding: 6px;
-    }
-
-    .qr-box img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
     }
 
     /* CONTENT */
@@ -424,44 +420,40 @@
 </head>
 <body>
   <main class="page-shell">
-    <!-- HEADER -->
+    <!-- HEADER WITH QR INSIDE BANNER -->
     <header class="header-bar">
-      <div class="header-left">
+      <div class="header-main">
         <div class="logo-wrap">
           <img src="logo.png" alt="Telangana Rising Global Summit logo" />
         </div>
         <div class="header-text">
           <div class="header-title">TELANGANA RISING</div>
           <div class="header-subtitle">GLOBAL SUMMIT 2025 • VISION 2047</div>
+          <div class="header-meta">
+            OFFICIAL SOCIAL MEDIA HANDLES • HYDERABAD • DECEMBER 8–9, 2025
+          </div>
         </div>
       </div>
-      <div class="header-right">
-        <span>OFFICIAL SOCIAL MEDIA HANDLES</span>
-        <span>HYDERABAD • DECEMBER 8–9, 2025</span>
-      </div>
-    </header>
-
-    <!-- HERO + QR (stacked) -->
-    <section class="hero-panel">
-      <div class="hero-copy">
-        <div class="hero-kicker">Stay connected</div>
-        <div class="hero-headline">Follow the summit platforms</div>
-        <p class="hero-body">
-          Follow the <strong>official social media handles</strong> of the
-          <strong>Telangana Rising Global Summit 2025</strong> for key programme
-          updates, announcements and highlights from Hyderabad.
-        </p>
-        <p class="hero-footnote">
-          These are the only verified platforms for Telangana Rising Global Summit communications.
-        </p>
-      </div>
-
-      <div class="qr-panel">
-        <div class="qr-label">Scanned via QR</div>
-        <div class="qr-box">
+      <div class="header-qr">
+        <div class="header-qr-label">SCANNED VIA QR</div>
+        <div class="header-qr-box">
           <img src="qr.png" alt="QR Code" />
         </div>
       </div>
+    </header>
+
+    <!-- HERO TEXT -->
+    <section class="hero-panel">
+      <div class="hero-kicker">Stay connected</div>
+      <div class="hero-headline">Follow the summit platforms</div>
+      <p class="hero-body">
+        Follow the <strong>official social media handles</strong> of the
+        <strong>Telangana Rising Global Summit 2025</strong> for key programme
+        updates, announcements and highlights from Hyderabad.
+      </p>
+      <p class="hero-footnote">
+        These are the only verified platforms for Telangana Rising Global Summit communications.
+      </p>
     </section>
 
     <!-- SOCIALS -->
