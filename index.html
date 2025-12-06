@@ -30,7 +30,7 @@
       --radius-pill: 999px;
       --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.22);
 
-      /* change bg file if needed */
+      /* optional background image */
       --hero-bg-image: url("bg.jpg");
     }
 
@@ -93,24 +93,18 @@
       }
     }
 
-    /* HEADER WITH QR ON RIGHT */
+    /* HEADER */
     .header-bar {
       background: linear-gradient(135deg, var(--blue-dark), var(--blue-main));
       color: #ffffff;
       padding: 10px 14px;
-      display: grid;
-      grid-template-columns: minmax(0, 1.7fr) auto;
-      gap: 14px;
+      display: flex;
       align-items: center;
+      justify-content: space-between;
+      gap: 10px;
     }
 
-    @media (max-width: 640px) {
-      .header-bar {
-        grid-template-columns: minmax(0, 1fr);
-      }
-    }
-
-    .header-main {
+    .header-left {
       display: flex;
       align-items: center;
       gap: 10px;
@@ -140,7 +134,7 @@
     .header-text {
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 2px;
       min-width: 0;
     }
 
@@ -160,65 +154,33 @@
       opacity: 0.9;
     }
 
-    .header-meta {
+    .header-right {
       font-size: 10px;
+      text-align: right;
+    }
+
+    .header-right span {
+      display: block;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      opacity: 0.9;
-    }
-
-    .header-qr {
-      justify-self: end;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .header-qr-label {
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-weight: 600;
-      opacity: 0.95;
-    }
-
-    .header-qr-box {
-      width: 96px;
-      height: 96px;
-      border-radius: 16px;
-      background: radial-gradient(circle at 0 0, rgba(255,255,255,0.4), transparent 65%),
-                  #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 12px 26px rgba(15,23,42,0.5);
-      padding: 6px;
-    }
-
-    .header-qr-box img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      border-radius: 12px;
     }
 
     @media (max-width: 640px) {
-      .header-qr {
+      .header-bar {
+        flex-direction: column;
         align-items: flex-start;
       }
-      .header-qr-box {
-        width: 90px;
-        height: 90px;
+      .header-right {
+        text-align: left;
       }
       .header-title {
         font-size: 16px;
       }
     }
 
-    /* HERO TEXT ONLY */
+    /* HERO */
     .hero-panel {
-      padding: 14px 16px 10px;
+      padding: 16px 16px 10px;
       display: flex;
       flex-direction: column;
       gap: 8px;
@@ -316,7 +278,7 @@
       margin: 6px 0 10px;
     }
 
-    /* SOCIAL LIST – clean cards */
+    /* SOCIAL LIST */
     .social-list {
       display: flex;
       flex-direction: column;
@@ -420,29 +382,24 @@
 </head>
 <body>
   <main class="page-shell">
-    <!-- HEADER WITH QR INSIDE BANNER -->
+    <!-- HEADER -->
     <header class="header-bar">
-      <div class="header-main">
+      <div class="header-left">
         <div class="logo-wrap">
           <img src="logo.png" alt="Telangana Rising Global Summit logo" />
         </div>
         <div class="header-text">
           <div class="header-title">TELANGANA RISING</div>
           <div class="header-subtitle">GLOBAL SUMMIT 2025 • VISION 2047</div>
-          <div class="header-meta">
-            OFFICIAL SOCIAL MEDIA HANDLES • HYDERABAD • DECEMBER 8–9, 2025
-          </div>
         </div>
       </div>
-      <div class="header-qr">
-        <div class="header-qr-label">SCANNED VIA QR</div>
-        <div class="header-qr-box">
-          <img src="qr.png" alt="QR Code" />
-        </div>
+      <div class="header-right">
+        <span>OFFICIAL SOCIAL MEDIA HANDLES</span>
+        <span>HYDERABAD • DECEMBER 8–9, 2025</span>
       </div>
     </header>
 
-    <!-- HERO TEXT -->
+    <!-- HERO -->
     <section class="hero-panel">
       <div class="hero-kicker">Stay connected</div>
       <div class="hero-headline">Follow the summit platforms</div>
